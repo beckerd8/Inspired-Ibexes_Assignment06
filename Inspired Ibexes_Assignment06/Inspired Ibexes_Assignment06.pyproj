@@ -21,6 +21,10 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="bird_package\bird.py" />
+    <Compile Include="bird_package\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="dog_package\dog.py">
       <SubType>Code</SubType>
     </Compile>
@@ -33,6 +37,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="bird_package\" />
     <Folder Include="main_package\" />
     <Folder Include="dog_package\" />
   </ItemGroup>
