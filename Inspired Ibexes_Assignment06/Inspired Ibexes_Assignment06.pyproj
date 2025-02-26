@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>effd6d70-f45e-4c75-acb6-58bc1f6d2fae</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Inspired_Ibexes_Assignment06.py</StartupFile>
+    <StartupFile>main_package\main.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,7 +21,20 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Inspired_Ibexes_Assignment06.py" />
+    <Compile Include="dog_package\dog.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="main_package\main.py" />
+    <Compile Include="main_package\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="dog_package\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="main_package\" />
+    <Folder Include="dog_package\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
