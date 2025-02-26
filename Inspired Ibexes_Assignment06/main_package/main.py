@@ -1,6 +1,8 @@
 # File Name : main.py
-# Student Name: David Becker, Evan Bolin <-- ADD NAME AND EMAIL :) - LAST PERSON DELETE THIS
-# email:  beckerd8@mail.uc.edu, bolinen@mail.uc.edu
+
+# Student Name: David Becker, Zach Bell, Evan Bolin <-- ADD NAME AND EMAIL :) - LAST PERSON DELETE THIS
+# email:  beckerd8@mail.uc.edu,  bellzj@mail.uc.edu, bolinen@mail.uc.edu
+
 # Assignment Number: Assignment 06
 # Due Date:   2/27/2025
 # Course #/Section:   IS4010-001
@@ -14,7 +16,6 @@
 
 
 from dog_package.dog import *
-from mouse_package.mouse import * 
 
 
 if __name__ == "__main__":
@@ -39,6 +40,9 @@ if __name__ == "__main__":
 
     print("\n--------------------")
 
+
+from mouse_package.mouse import * 
+
 if __name__ == "__main__":
 
     print("\n--------------------")
@@ -55,3 +59,19 @@ if __name__ == "__main__":
     print(my_Mouse)
 
     print("\n--------------------")
+
+from bird_package.bird import Bird
+
+if __name__ == "__main__":
+
+    # Creating a Bird object
+    my_bird = Bird(name="Donald", species="Duck", age=90, color="White")
+
+    # Printing string representations
+    print(my_bird)
+
+    # Demonstrating method
+    my_bird.quack()
+   
+    print("\n--------------------")
+
