@@ -1,6 +1,8 @@
 # File Name : main.py
-# Student Name: David Becker, Zach Bell <-- ADD NAME AND EMAIL :) - LAST PERSON DELETE THIS
-# email:  beckerd8@mail.uc.edu, bellzj@mail.uc.edu
+
+# Student Name: David Becker, Zach Bell, Evan Bolin <-- ADD NAME AND EMAIL :) - LAST PERSON DELETE THIS
+# email:  beckerd8@mail.uc.edu,  bellzj@mail.uc.edu, bolinen@mail.uc.edu
+
 # Assignment Number: Assignment 06
 # Due Date:   2/27/2025
 # Course #/Section:   IS4010-001
@@ -38,6 +40,26 @@ if __name__ == "__main__":
 
     print("\n--------------------")
 
+
+from mouse_package.mouse import * 
+
+if __name__ == "__main__":
+
+    print("\n--------------------")
+
+    my_Mouse = Mouse(name="Stewart", weight=2, length=6, color="Gray")
+
+    print(my_Mouse)
+
+    my_Mouse.chew()
+    my_Mouse.eat("cheese")
+
+    print("Now the mouse is 4 pounds")
+    my_Mouse.set_weight(4)
+    print(my_Mouse)
+
+    print("\n--------------------")
+
 from bird_package.bird import Bird
 
 if __name__ == "__main__":
@@ -52,3 +74,4 @@ if __name__ == "__main__":
     my_bird.quack()
    
     print("\n--------------------")
+
