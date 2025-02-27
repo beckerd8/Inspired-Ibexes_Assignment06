@@ -25,6 +25,7 @@
     <Compile Include="bird_package\__init__.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="cat_package\cat.py" />
     <Compile Include="dog_package\dog.py">
       <SubType>Code</SubType>
     </Compile>
@@ -41,12 +42,16 @@
     <Compile Include="mouse_package\__init__.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="cat_package\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bird_package\" />
     <Folder Include="main_package\" />
     <Folder Include="dog_package\" />
     <Folder Include="mouse_package\" />
+    <Folder Include="cat_package\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
