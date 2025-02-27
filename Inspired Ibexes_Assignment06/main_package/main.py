@@ -1,7 +1,7 @@
 # File Name : main.py
 
-# Student Name: David Becker, Zach Bell, Evan Bolin <-- ADD NAME AND EMAIL :) - LAST PERSON DELETE THIS
-# email:  beckerd8@mail.uc.edu,  bellzj@mail.uc.edu, bolinen@mail.uc.edu
+# Student Name: David Becker, Zach Bell, Evan Bolin, Matthew Boutros
+# email:  beckerd8@mail.uc.edu,  bellzj@mail.uc.edu, bolinen@mail.uc.edu, boutromw@mail.uc.edu
 
 # Assignment Number: Assignment 06
 # Due Date:   2/27/2025
@@ -14,8 +14,10 @@
 
 # Anything else that's relevant:
 
-
+from bird_package.bird import *
 from dog_package.dog import *
+from cat_package.cat import *
+from mouse_package.mouse import *
 
 
 if __name__ == "__main__":
@@ -41,7 +43,7 @@ if __name__ == "__main__":
     print("\n--------------------")
 
 
-from mouse_package.mouse import * 
+
 
 if __name__ == "__main__":
 
@@ -60,7 +62,7 @@ if __name__ == "__main__":
 
     print("\n--------------------")
 
-from bird_package.bird import Bird
+
 
 if __name__ == "__main__":
 
@@ -74,4 +76,21 @@ if __name__ == "__main__":
     my_bird.quack()
    
     print("\n--------------------")
-
+    
+ 
+    # Creating a Cat object
+    my_cat = Cat(name="Whiskers", breed="Siamese", age=2, color="Gray")
+    
+    # Printing string representation of the Cat object
+    print(my_cat)
+    
+    # Demonstrating Cat methods
+    my_cat.meow()
+    my_cat.scratch("sofa")
+    
+    # Updating Cat's age
+    print("Update cat's age to 3...")
+    my_cat.set_age(3)
+    print(my_cat)
+    
+    print("\n--------------------")
