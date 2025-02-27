@@ -15,16 +15,15 @@
 # Anything else that's relevant:
 
 
-
 from bird_package.bird import *
 from dog_package.dog import *
 from cat_package.cat import *
-from mouse_package.mouse import *
+from mouse_Package.mouse import *
 
 
 if __name__ == "__main__":
     
-    print("\n--------------------")
+    print("\n--------------------\n")
     
     # Creating a Dog object
     my_dog = Dog(name="Yoki", breed="Chocolate Lab", age=3, color="Chocolate")
@@ -40,16 +39,9 @@ if __name__ == "__main__":
     # Updating dog's age
     print("Update dog's age to 4...")
     my_dog.set_age(4)
-    print(my_dog)
+    print(f"The dog's new age is: {my_dog.get_age()}") 
 
-    print("\n--------------------")
-
-
-
-
-if __name__ == "__main__":
-
-    print("\n--------------------")
+    print("\n--------------------\n")
 
     my_Mouse = Mouse(name="Stewart", weight=2, length=6, color="Gray")
 
@@ -60,13 +52,9 @@ if __name__ == "__main__":
 
     print("Now the mouse is 4 pounds")
     my_Mouse.set_weight(4)
-    print(my_Mouse)
+    print(f"The mouse's updated weight is: {my_Mouse.get_weight()} pounds")  
 
-    print("\n--------------------")
-
-
-
-if __name__ == "__main__":
+    print("\n--------------------\n")
 
     # Creating a Bird object
     my_bird = Bird(name="Donald", species="Duck", age=90, color="White")
@@ -76,15 +64,17 @@ if __name__ == "__main__":
 
     # Demonstrating method
     my_bird.quack()
+    print(f"The bird's species is: {my_bird.get_species()}") 
    
-    print("\n--------------------")
-    
+    print("\n--------------------\n")
+
  
     # Creating a Cat object
     my_cat = Cat(name="Whiskers", breed="Siamese", age=2, color="Gray")
     
     # Printing string representation of the Cat object
     print(my_cat)
+    print(f"The cat's color is: {my_cat.get_color()}")  
     
     # Demonstrating Cat methods
     my_cat.meow()
@@ -94,5 +84,5 @@ if __name__ == "__main__":
     print("Update cat's age to 3...")
     my_cat.set_age(3)
     print(my_cat)
+
     
-    print("\n--------------------")
