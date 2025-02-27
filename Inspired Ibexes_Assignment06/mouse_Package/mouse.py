@@ -108,4 +108,4 @@ class Mouse(object):
         """
         @return String: Representation of the current object
         """
-        return f"Dog name: {self.__name}, weith: {self.__weight}pounds, length: {self.__length}inches, color: {self.__color}"
+        return f"Mouse name: {self.__name}, weight: {self.__weight}pounds, length: {self.__length}inches, color: {self.__color}"
